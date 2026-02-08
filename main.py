@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.datasets import fetch_california_housing
-from datapreprocessor import Dataprocessor
+from datapreprocessor import Datapreprocessor
 import numpy as np
 
 hous=fetch_california_housing()
@@ -16,7 +16,7 @@ print(df.head())
 print("\nФорма: ", df.shape)
 print("\nПропуски: \n", df.isnull().sum())
 
-prepr=Dataprocessor(df)
+prepr=Datapreprocessor(df)
 transformed_df=prepr.fit_transform()
 
 print("Обработанный DataFrame, первые 5 строк")

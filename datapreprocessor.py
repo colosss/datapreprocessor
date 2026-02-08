@@ -1,6 +1,6 @@
 import pandas as pd
 
-class Dataprocessor:
+class Datapreprocessor:
     def __init__(self, df):
         if not isinstance(df, pd.DataFrame):
             raise ValueError("Входные данные должны быть формата pandas DataFrame")
